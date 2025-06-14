@@ -1,6 +1,6 @@
 # 大模型（LLMs）微调训练 快速入门指南
 
-![ ](https://img.shields.io/badge/python-3.12.4-brightgreen.svg) ![ ](https://img.shields.io/badge/jupyter-notebook-100%-brightgreen.svg) ![ ](https://img.shields.io/badge/huggingface-0.31.2-brightgreen.svg) ![ ](https://img.shields.io/badge/transfermer-4.51.3-brightgreen.svg)
+![ ](https://img.shields.io/badge/python-3.12.4-brightgreen.svg) ![ ](https://img.shields.io/badge/huggingface-0.31.2-brightgreen.svg) ![ ](https://img.shields.io/badge/transfermer-4.51.3-brightgreen.svg)
 
 
 
