@@ -8,17 +8,6 @@
 
 本项目主要涉及大模型的三种微调算法：全量微调、LoRa 微调、QLoRa 微调，来对开源模型Qwen3-0.6B进行微调，并给出了对应的代码实现。
 
-
-
-## 相关博客
-
-| 大模型全量微调实战：精度至上的 “终极优化器    | https://blog.csdn.net/hhq2002322/article/details/148641479   |
-| --------------------------------------------- | ------------------------------------------------------------ |
-| **大模型 LoRA 微调：高效训练的秘密武器**      | **https://blog.csdn.net/hhq2002322/article/details/148649195** |
-| **大模型 QLoRA 微调实战：高效训练的秘密武器** | **https://blog.csdn.net/hhq2002322/article/details/148649307** |
-
-
-
 ## 拉取代码
 
 大家可以克隆仓库到本地或者服务器上运行
@@ -31,11 +20,11 @@ git clone https://github.com/huangxiaoye6/LLM-tuning.git
 
 ## 搭建开发环境
 
-本项目对于硬件有一定要求，GPU显存不少于6G，负责可能没办法进行训练。
+本项目对于硬件有一定要求，GPU显存不少于6G，否则可能没办法进行训练。
 
 建议使用云服务器进行模型训练和微调。
 
-- Python环境管理  [Anaconda](https://www.anaconda.com/)
+- Python环境管理  [uv](https://docs.astral.sh/uv/)
 
 - Python交互式开发环境  [jupyter notebook](https://jupyter.org/)
 
@@ -59,9 +48,23 @@ git clone https://github.com/huangxiaoye6/LLM-tuning.git
 
 ![](./docs/gpu-check.png)
 
-在项目的根目录打开终端，输入 `jupyter notebook`，就可以运行代码了
+### 安装 uv 环境管理工具
 
+```python
+pip  install uv
+```
 
+### 安装指定Python版本
+
+```
+uv python install 3.10
+```
+
+### 安装项目依赖
+
+```
+uv sync
+```
 
 ## 三种微调算法对比
 
