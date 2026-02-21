@@ -6,7 +6,7 @@
 
 ## 项目概述
 
-本项目主要涉及大模型的三种微调算法：全量微调、LoRa 微调、QLoRa 微调，来对开源模型Qwen3-0.6B进行微调，并给出了对应的代码实现。
+本项目以开源模型 Qwen3-0.6B 为例展开大模型微调相关工作，实现了 Lora、P-tuning 等微调算法，同时涵盖模型增量预训练、GPTQ/AWQ 等量化操作，并提供了对应的完整代码实现。
 
 ## 拉取代码
 
@@ -44,14 +44,14 @@ git clone https://github.com/huangxiaoye6/LLM-tuning.git
 
 
 
-安装完成后，使用 `nvidia-smi` 指令查看版本：
+安装完成后，使用 `nvidia-smi` 指令查看版本和显存大小：
 
 ![](./docs/gpu-check.png)
 
 ### 安装 uv 环境管理工具
 
 ```python
-pip  install uv
+pip install uv
 ```
 
 ### 安装指定Python版本
@@ -66,7 +66,7 @@ uv python install 3.10
 uv sync
 ```
 
-## 三种微调算法对比
+## 微调算法对比
 
 ### 1. 全量微调
 
@@ -91,3 +91,6 @@ uv sync
 
 
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=huangxiaoye6/LLM-tuning&type=date&legend=top-left)](https://www.star-history.com/#huangxiaoye6/LLM-tuning&type=date&legend=top-left)
