@@ -1,12 +1,12 @@
 # 大模型（LLMs）微调训练 快速入门指南
 
-![ ](https://img.shields.io/badge/python-3.12.4-brightgreen.svg) ![ ](https://img.shields.io/badge/huggingface-0.31.2-brightgreen.svg) ![ ](https://img.shields.io/badge/transfermer-4.51.3-brightgreen.svg)
+![ ](https://img.shields.io/badge/python-3.10.0-brightgreen.svg) ![ ](https://img.shields.io/badge/huggingface-0.31.2-brightgreen.svg) ![ ](https://img.shields.io/badge/transfermer-4.51.3-brightgreen.svg)![ ](https://img.shields.io/badge/peft-0.18.1-brightgreen.svg)
 
 
 
 ## 项目概述
 
-本项目以开源模型 Qwen3-0.6B 为例展开大模型微调相关工作，实现了 Lora、P-tuning 等微调算法，同时涵盖模型增量预训练、GPTQ/AWQ 等量化操作，并提供了对应的完整代码实现。
+本项目旨在介绍大模型微调相关算法，并以开源模型 Qwen3-0.6B 为例展开，实现了 Lora、P-tuning 等微调算法，同时涵盖模型增量预训练、GPTQ/AWQ 等量化操作，并提供了对应的完整代码实现。
 
 ## 拉取代码
 

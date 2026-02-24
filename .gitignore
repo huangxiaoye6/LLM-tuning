@@ -7,3 +7,7 @@ __pycache__
 models/
 
 **/.ipynb_checkpoints/
+
+datasets/**/*
+!datasets/
+!datasets/data_info.json

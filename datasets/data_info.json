@@ -1,0 +1,35 @@
+[
+  {
+    "peft": [
+      {
+        "dataset_name": "Kuugo/chinese_law_ft_dataset",
+        "description": "本数据集专为法律领域的大语言模型微调设计，包含高质量的中文法律问答对，已转换为标准的Alpaca格式，方便直接用于模型训练。",
+        "szie": 281142,
+        "columns": {
+          "instruction": "法律问题描述",
+          "input": "补充信息(可选)",
+          "output": "专业法律回答"
+        }
+      }
+    ],
+    "description": "参数微调数据集"
+  },
+  {
+    "rl": [
+      {
+        "dataset_name": "meta-math/GSM8K_zh",
+        "description": "GSM8K_zh是一个中文数学推理数据集，问答对由GSM8K翻译而来",
+        "szie": 8792,
+        "columns": {
+          "question": "英文数学问题",
+          "answer": "英文数学答案",
+          "answer_only": "只有答案",
+          "split": "数据集划分",
+          "question_zh": "中文数学问题",
+          "answer_zh": "中文数学答案"
+        }
+      }
+    ],
+    "description": "强化学习参数微调数据集"
+  }
+]

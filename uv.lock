@@ -175,6 +175,15 @@ wheels = [
 ]
 
 [[package]]
+name = "antlr4-python3-runtime"
+version = "4.13.2"
+source = { registry = "https://pypi.tuna.tsinghua.edu.cn/simple" }
+sdist = { url = "https://pypi.tuna.tsinghua.edu.cn/packages/33/5f/2cdf6f7aca3b20d3f316e9f505292e1f256a32089bd702034c29ebde6242/antlr4_python3_runtime-4.13.2.tar.gz", hash = "sha256:909b647e1d2fc2b70180ac586df3933e38919c85f98ccc656a96cd3f25ef3916", size = 117467, upload-time = "2024-08-03T19:00:12.757Z" }
+wheels = [
+    { url = "https://pypi.tuna.tsinghua.edu.cn/packages/89/03/a851e84fcbb85214dc637b6378121ef9a0dd61b4c65264675d8a5c9b1ae7/antlr4_python3_runtime-4.13.2-py3-none-any.whl", hash = "sha256:fe3835eb8d33daece0e799090eda89719dbccee7aa39ef94eed3818cafa5a7e8", size = 144462, upload-time = "2024-08-03T19:00:11.134Z" },
+]
+
+[[package]]
 name = "anyio"
 version = "4.12.1"
 source = { registry = "https://pypi.tuna.tsinghua.edu.cn/simple" }
@@ -1310,6 +1319,19 @@ wheels = [
 ]
 
 [[package]]
+name = "latex2sympy2-extended"
+version = "1.11.0"
+source = { registry = "https://pypi.tuna.tsinghua.edu.cn/simple" }
+dependencies = [
+    { name = "antlr4-python3-runtime" },
+    { name = "sympy" },
+]
+sdist = { url = "https://pypi.tuna.tsinghua.edu.cn/packages/30/75/456da2da05f6380ea96e6ea804ab2c03e41fc3ed80052307fe8efe6ea20e/latex2sympy2_extended-1.11.0.tar.gz", hash = "sha256:9695657c81b50abba2636638638618db59f4663ed2a4a12d62cef74a40e28fec", size = 207023, upload-time = "2026-01-10T01:43:21.319Z" }
+wheels = [
+    { url = "https://pypi.tuna.tsinghua.edu.cn/packages/e9/61/f75cd1fa54d8434276126034aed54dd120747de9a8fa013cdd79545ccbeb/latex2sympy2_extended-1.11.0-py3-none-any.whl", hash = "sha256:aebb77d52ce269e25028e4bea89ddb14d242ba36bcf7b636496fb5fd9728d234", size = 209050, upload-time = "2026-01-10T01:43:19.458Z" },
+]
+
+[[package]]
 name = "llm-tuning"
 version = "0.1.0"
 source = { virtual = "." }
@@ -1317,6 +1339,7 @@ dependencies = [
     { name = "accelerate" },
     { name = "bitsandbytes" },
     { name = "datasets" },
+    { name = "math-verify" },
     { name = "notebook" },
     { name = "optimum" },
     { name = "peft" },
@@ -1325,6 +1348,7 @@ dependencies = [
     { name = "torchvision", version = "0.25.0", source = { registry = "https://pypi.tuna.tsinghua.edu.cn/simple" }, marker = "sys_platform != 'linux' and sys_platform != 'win32'" },
     { name = "torchvision", version = "0.25.0+cu128", source = { registry = "https://download.pytorch.org/whl/cu128" }, marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
     { name = "transformers" },
+    { name = "trl" },
 ]
 
 [package.metadata]
@@ -1332,6 +1356,7 @@ requires-dist = [
     { name = "accelerate", specifier = ">=1.12.0" },
     { name = "bitsandbytes", specifier = ">=0.49.1" },
     { name = "datasets", specifier = ">=4.5.0" },
+    { name = "math-verify", specifier = ">=0.9.0" },
     { name = "notebook", specifier = ">=7.5.3" },
     { name = "optimum", specifier = ">=2.1.0" },
     { name = "peft", specifier = ">=0.18.1" },
@@ -1340,6 +1365,7 @@ requires-dist = [
     { name = "torchvision", marker = "sys_platform != 'linux' and sys_platform != 'win32'", specifier = ">=0.22.0" },
     { name = "torchvision", marker = "sys_platform == 'linux' or sys_platform == 'win32'", specifier = ">=0.22.0", index = "https://download.pytorch.org/whl/cu128" },
     { name = "transformers", specifier = ">=5.1.0" },
+    { name = "trl", specifier = ">=0.28.0" },
 ]
 
 [[package]]
@@ -1425,6 +1451,18 @@ wheels = [
     { url = "https://pypi.tuna.tsinghua.edu.cn/packages/fb/df/5bd7a48c256faecd1d36edc13133e51397e41b73bb77e1a69deab746ebac/markupsafe-3.0.3-cp314-cp314t-win32.whl", hash = "sha256:915c04ba3851909ce68ccc2b8e2cd691618c4dc4c4232fb7982bca3f41fd8c3d", size = 14819, upload-time = "2025-09-27T18:37:26.285Z" },
     { url = "https://pypi.tuna.tsinghua.edu.cn/packages/1a/8a/0402ba61a2f16038b48b39bccca271134be00c5c9f0f623208399333c448/markupsafe-3.0.3-cp314-cp314t-win_amd64.whl", hash = "sha256:4faffd047e07c38848ce017e8725090413cd80cbc23d86e55c587bf979e579c9", size = 15426, upload-time = "2025-09-27T18:37:27.316Z" },
     { url = "https://pypi.tuna.tsinghua.edu.cn/packages/70/bc/6f1c2f612465f5fa89b95bead1f44dcb607670fd42891d8fdcd5d039f4f4/markupsafe-3.0.3-cp314-cp314t-win_arm64.whl", hash = "sha256:32001d6a8fc98c8cb5c947787c5d08b0a50663d139f1305bac5885d98d9b40fa", size = 14146, upload-time = "2025-09-27T18:37:28.327Z" },
+]
+
+[[package]]
+name = "math-verify"
+version = "0.9.0"
+source = { registry = "https://pypi.tuna.tsinghua.edu.cn/simple" }
+dependencies = [
+    { name = "latex2sympy2-extended" },
+]
+sdist = { url = "https://pypi.tuna.tsinghua.edu.cn/packages/4f/12/b8d13b581e110ac2f724a2351a8361a70fa36d057eb945d6379e8747c256/math_verify-0.9.0.tar.gz", hash = "sha256:45ac6c61344ba056b9e99a660a4bc8d044ed408f730aed68c60435aa5eec4645", size = 60329, upload-time = "2026-01-10T01:48:33.056Z" }
+wheels = [
+    { url = "https://pypi.tuna.tsinghua.edu.cn/packages/62/76/6b4969bccc842b6567f7e6ee015684b9428a9b7fcbdf479e73716f43597f/math_verify-0.9.0-py3-none-any.whl", hash = "sha256:3703e7c4885354027fa84409d762a596a2906d1fd4deb78361876bd905a76194", size = 29967, upload-time = "2026-01-10T01:48:31.674Z" },
 ]
 
 [[package]]
@@ -3572,6 +3610,21 @@ wheels = [
     { url = "https://pypi.tuna.tsinghua.edu.cn/packages/df/3d/9e7eee57b37c80cec63322c0231bb6da3cfe535a91d7a4d64896fcb89357/triton-3.6.0-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:a17a5d5985f0ac494ed8a8e54568f092f7057ef60e1b0fa09d3fd1512064e803", size = 188273063, upload-time = "2026-01-20T16:01:07.278Z" },
     { url = "https://pypi.tuna.tsinghua.edu.cn/packages/48/db/56ee649cab5eaff4757541325aca81f52d02d4a7cd3506776cad2451e060/triton-3.6.0-cp314-cp314t-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:0b3a97e8ed304dfa9bd23bb41ca04cdf6b2e617d5e782a8653d616037a5d537d", size = 176274804, upload-time = "2026-01-20T16:16:31.528Z" },
     { url = "https://pypi.tuna.tsinghua.edu.cn/packages/f6/56/6113c23ff46c00aae423333eb58b3e60bdfe9179d542781955a5e1514cb3/triton-3.6.0-cp314-cp314t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:46bd1c1af4b6704e554cad2eeb3b0a6513a980d470ccfa63189737340c7746a7", size = 188397994, upload-time = "2026-01-20T16:01:14.236Z" },
+]
+
+[[package]]
+name = "trl"
+version = "0.28.0"
+source = { registry = "https://pypi.tuna.tsinghua.edu.cn/simple" }
+dependencies = [
+    { name = "accelerate" },
+    { name = "datasets" },
+    { name = "packaging" },
+    { name = "transformers" },
+]
+sdist = { url = "https://pypi.tuna.tsinghua.edu.cn/packages/86/98/c99f4e83dc6b4cd95cba7bf3bb48d3e88624ed9aa5b47a6866ee5ea337ec/trl-0.28.0.tar.gz", hash = "sha256:1b1269ac0ebb87465fc47c35664aed4e8e7ef67909098c7c0f801806ab89dd62", size = 455787, upload-time = "2026-02-10T13:21:17.243Z" }
+wheels = [
+    { url = "https://pypi.tuna.tsinghua.edu.cn/packages/95/67/6b93c90d40342ae32df93724bb6f1584e963701c2bafe5fe90007afb51c3/trl-0.28.0-py3-none-any.whl", hash = "sha256:f01c6b4bbabe4db8c60ef8a7b0b7fe7f94859dd1c1cbe210daaa07fd4c26ddc9", size = 540524, upload-time = "2026-02-10T13:21:15.852Z" },
 ]
 
 [[package]]
